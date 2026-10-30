@@ -1,0 +1,17 @@
+---
+title: "Welcome"
+---
+
+## About me
+
+Hello! I am **Xueying Jia**. I am learning data science with R through [P8105](https://p8105.com).
+
+I am developing skills in data cleaning, visualization, and reproducible analysis.
+
+## About this website
+
+This website will share my academic and professional background and examples of my data analysis work.
+
+## Find me online
+
+You can explore my code and projects on [GitHub](https://github.com/Xueying-Jia).
