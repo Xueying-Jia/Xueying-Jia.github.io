@@ -5,6 +5,8 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+    - text: "Resume"
+      href: resume.html
   right:
     - text: "GitHub"
       href: https://github.com/Xueying-Jia

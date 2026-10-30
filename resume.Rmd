@@ -1,0 +1,91 @@
+---
+title: "Resume"
+---
+
+**Xueying Jia**
+
+[Email](mailto:xyjia599@gmail.com) | [GitHub](https://github.com/Xueying-Jia)
+
+## Education
+
+### Columbia University Mailman School of Public Health
+
+New York, USA | September 2025 - May 2027 (expected)
+
+- Master of Public Health in Epidemiology.
+- Certificate in Applied Biostatistics and Public Health Data Science.
+
+### Macao University of Science and Technology
+
+Macao SAR, China | September 2021 - June 2025
+
+- Bachelor of Food and Nutritional Sciences.
+
+## Research Experience
+
+### Birth Defect Surveillance Study
+
+**Shanghai Municipal Center for Disease Control and Prevention**
+
+Research Contributor | July 2026 - Present | Manuscript in progress
+
+- Prepared selected aggregate inputs for a Shanghai birth-defect surveillance study covering 2012-2024, checking ICD-10 groupings, proportion denominators, and table definitions.
+- Used R and SAS for Pearson chi-square comparisons of selected annual proportions and diagnosis-timing distributions; reviewed sparse cells, degrees of freedom, and P values.
+
+### Dietary Interventions for Obesity
+
+**Bachelor's Thesis | Peking University People's Hospital and Macao University of Science and Technology**
+
+January 2025 - April 2025
+
+- Designed a retrospective cohort study using electronic medical records to compare baseline and eight-week outcomes of 5:2 intermittent fasting and high-protein diets among adults with obesity.
+- Used R for descriptive statistics, normality tests, within- and between-group comparisons, and mixed-effects models incorporating group, time, and their interaction.
+- Produced 20 statistical tables, a study figure, and an English thesis, discussing limitations related to sample size, nonrandom allocation, and short follow-up.
+
+### Additional Research Projects
+
+- **Dietary Nutrition and Weight Management** (August - October 2024): Compared ketogenic diets and intermittent fasting in weight-management programs under the guidance of Prof. Mary Flynn, Brown University.
+- **Yellow Pitahaya and Intestinal Function** (November 2023 - December 2024): Conducted controlled experiments in a rat model of constipation, including intestinal motility, histology, microbiota, and gene-expression analyses.
+- **Nano-encapsulated Capsaicin** (April - June 2024): Reviewed encapsulation techniques and carrier materials for food and pharmaceutical applications and wrote a review article.
+- **Food Sensory Evaluation** (March - May 2024): Evaluated plant-based products, teas, and fish using descriptive methods, liking scales, and Check-All-That-Apply questionnaires.
+- **Curcumin-enriched Pickering Emulsions** (March - May 2024): Developed and studied emulsions for reducing polycyclic aromatic hydrocarbons in fried chicken.
+- **Vitamin B, Gut Microbiota, and Dietary Patterns** (March - May 2024): Conducted dietary surveys, psychological assessments, laboratory analyses, and a four-week nutritional intervention.
+
+## Internship Experience
+
+### Shanghai Municipal Center for Disease Control and Prevention
+
+**Epidemiology and Public Health Data** | Shanghai, China | June - August 2026
+
+- Prepared documentation and briefing slides for public health digital platforms, explaining platform functions and data-governance workflows.
+- Harmonized chronic-disease questionnaires and prepared an Excel codebook, checking variable definitions, response coding, and mappings to exported data fields.
+
+### Peking University People's Hospital
+
+**Clinical Nutrition Intern** | Beijing, China | January - April 2025
+
+- Supported outpatient nutritional, body-composition, and quality-of-life assessments under supervision, and designed a weight-management intake questionnaire.
+- Assisted with dietary planning and clinical documentation; reviewed perioperative nutrition support and follow-up considerations for a sleeve gastrectomy case.
+
+### IQVIA
+
+**Public Health Consultant Assistant (PTA)** | July - August 2024
+
+- Researched retinitis pigmentosa diagnosis, treatment, and gene-therapy approaches; prepared charts and presentation materials using think-cell.
+- Developed a patient-journey-based survey structure and synthesized physician interviews to summarize care pathways, patient needs, and challenges.
+
+### Shanxi Bethune Hospital
+
+**Clinical Nutrition Intern** | Taiyuan, China
+
+July - August 2023 and July - August 2024
+
+- Assisted with nutritional risk screening and malnutrition assessments using NRS-2002, MNA, GLIM criteria, and PG-SGA under supervision.
+- Supported nutrition planning, bedside dietary education, weight-management assessments, and follow-up adjustments.
+
+## Skills
+
+- **Data analysis:** R, SAS, SQL, SPSS, and Excel.
+- **Research methods:** Questionnaire design, data management, retrospective cohort studies, and statistical reporting.
+- **Laboratory techniques:** PCR, qPCR, RT-PCR, Western blot, cell culture, immunohistochemistry, and immunofluorescence.
+- **Languages:** Mandarin Chinese (native) and English (proficient; TOEFL 107).

@@ -4,14 +4,19 @@ title: "Welcome"
 
 ## About me
 
-Hello! I am **Xueying Jia**. I am learning data science with R through [P8105](https://p8105.com).
+Hello! I am **Xueying Jia**, a Master of Public Health student in Epidemiology at **Columbia University Mailman School of Public Health**, pursuing a certificate in Applied Biostatistics and Public Health Data Science.
 
-I am developing skills in data cleaning, visualization, and reproducible analysis.
+I earned my bachelor's degree in Food and Nutritional Sciences from **Macao University of Science and Technology**. My experience spans clinical nutrition, public health research, and data analysis.
 
-## About this website
+Through [P8105](https://p8105.com), I am developing skills in data cleaning, visualization, and reproducible analysis with R.
 
-This website will share my academic and professional background and examples of my data analysis work.
+## My background
 
-## Find me online
+My work has included birth-defect surveillance, a retrospective study of dietary interventions for obesity, and internships in public health and clinical nutrition.
 
-You can explore my code and projects on [GitHub](https://github.com/Xueying-Jia).
+Read more about my education, research, and professional experience on my [resume page](resume.html).
+
+## Connect with me
+
+- [GitHub](https://github.com/Xueying-Jia)
+- [Email](mailto:xyjia599@gmail.com)

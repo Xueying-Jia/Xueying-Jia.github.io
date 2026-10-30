@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Resume</title>
+
+<script src="site_libs/header-attrs-2.32/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Xueying Jia</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="resume.html">Resume</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/Xueying-Jia">GitHub</a>
+</li>
+<li>
+  <a href="mailto:xyjia599@gmail.com">Email</a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Resume</h1>
+
+</div>
+
+
+<p><strong>Xueying Jia</strong></p>
+<p><a href="mailto:xyjia599@gmail.com">Email</a> | <a
+href="https://github.com/Xueying-Jia">GitHub</a></p>
+<div id="education" class="section level2">
+<h2>Education</h2>
+<div id="columbia-university-mailman-school-of-public-health"
+class="section level3">
+<h3>Columbia University Mailman School of Public Health</h3>
+<p>New York, USA | September 2025 - May 2027 (expected)</p>
+<ul>
+<li>Master of Public Health in Epidemiology.</li>
+<li>Certificate in Applied Biostatistics and Public Health Data
+Science.</li>
+</ul>
+</div>
+<div id="macao-university-of-science-and-technology"
+class="section level3">
+<h3>Macao University of Science and Technology</h3>
+<p>Macao SAR, China | September 2021 - June 2025</p>
+<ul>
+<li>Bachelor of Food and Nutritional Sciences.</li>
+</ul>
+</div>
+</div>
+<div id="research-experience" class="section level2">
+<h2>Research Experience</h2>
+<div id="birth-defect-surveillance-study" class="section level3">
+<h3>Birth Defect Surveillance Study</h3>
+<p><strong>Shanghai Municipal Center for Disease Control and
+Prevention</strong></p>
+<p>Research Contributor | July 2026 - Present | Manuscript in
+progress</p>
+<ul>
+<li>Prepared selected aggregate inputs for a Shanghai birth-defect
+surveillance study covering 2012-2024, checking ICD-10 groupings,
+proportion denominators, and table definitions.</li>
+<li>Used R and SAS for Pearson chi-square comparisons of selected annual
+proportions and diagnosis-timing distributions; reviewed sparse cells,
+degrees of freedom, and P values.</li>
+</ul>
+</div>
+<div id="dietary-interventions-for-obesity" class="section level3">
+<h3>Dietary Interventions for Obesity</h3>
+<p><strong>Bachelor’s Thesis | Peking University People’s Hospital and
+Macao University of Science and Technology</strong></p>
+<p>January 2025 - April 2025</p>
+<ul>
+<li>Designed a retrospective cohort study using electronic medical
+records to compare baseline and eight-week outcomes of 5:2 intermittent
+fasting and high-protein diets among adults with obesity.</li>
+<li>Used R for descriptive statistics, normality tests, within- and
+between-group comparisons, and mixed-effects models incorporating group,
+time, and their interaction.</li>
+<li>Produced 20 statistical tables, a study figure, and an English
+thesis, discussing limitations related to sample size, nonrandom
+allocation, and short follow-up.</li>
+</ul>
+</div>
+<div id="additional-research-projects" class="section level3">
+<h3>Additional Research Projects</h3>
+<ul>
+<li><strong>Dietary Nutrition and Weight Management</strong> (August -
+October 2024): Compared ketogenic diets and intermittent fasting in
+weight-management programs under the guidance of Prof. Mary Flynn, Brown
+University.</li>
+<li><strong>Yellow Pitahaya and Intestinal Function</strong> (November
+2023 - December 2024): Conducted controlled experiments in a rat model
+of constipation, including intestinal motility, histology, microbiota,
+and gene-expression analyses.</li>
+<li><strong>Nano-encapsulated Capsaicin</strong> (April - June 2024):
+Reviewed encapsulation techniques and carrier materials for food and
+pharmaceutical applications and wrote a review article.</li>
+<li><strong>Food Sensory Evaluation</strong> (March - May 2024):
+Evaluated plant-based products, teas, and fish using descriptive
+methods, liking scales, and Check-All-That-Apply questionnaires.</li>
+<li><strong>Curcumin-enriched Pickering Emulsions</strong> (March - May
+2024): Developed and studied emulsions for reducing polycyclic aromatic
+hydrocarbons in fried chicken.</li>
+<li><strong>Vitamin B, Gut Microbiota, and Dietary Patterns</strong>
+(March - May 2024): Conducted dietary surveys, psychological
+assessments, laboratory analyses, and a four-week nutritional
+intervention.</li>
+</ul>
+</div>
+</div>
+<div id="internship-experience" class="section level2">
+<h2>Internship Experience</h2>
+<div id="shanghai-municipal-center-for-disease-control-and-prevention"
+class="section level3">
+<h3>Shanghai Municipal Center for Disease Control and Prevention</h3>
+<p><strong>Epidemiology and Public Health Data</strong> | Shanghai,
+China | June - August 2026</p>
+<ul>
+<li>Prepared documentation and briefing slides for public health digital
+platforms, explaining platform functions and data-governance
+workflows.</li>
+<li>Harmonized chronic-disease questionnaires and prepared an Excel
+codebook, checking variable definitions, response coding, and mappings
+to exported data fields.</li>
+</ul>
+</div>
+<div id="peking-university-peoples-hospital" class="section level3">
+<h3>Peking University People’s Hospital</h3>
+<p><strong>Clinical Nutrition Intern</strong> | Beijing, China | January
+- April 2025</p>
+<ul>
+<li>Supported outpatient nutritional, body-composition, and
+quality-of-life assessments under supervision, and designed a
+weight-management intake questionnaire.</li>
+<li>Assisted with dietary planning and clinical documentation; reviewed
+perioperative nutrition support and follow-up considerations for a
+sleeve gastrectomy case.</li>
+</ul>
+</div>
+<div id="iqvia" class="section level3">
+<h3>IQVIA</h3>
+<p><strong>Public Health Consultant Assistant (PTA)</strong> | July -
+August 2024</p>
+<ul>
+<li>Researched retinitis pigmentosa diagnosis, treatment, and
+gene-therapy approaches; prepared charts and presentation materials
+using think-cell.</li>
+<li>Developed a patient-journey-based survey structure and synthesized
+physician interviews to summarize care pathways, patient needs, and
+challenges.</li>
+</ul>
+</div>
+<div id="shanxi-bethune-hospital" class="section level3">
+<h3>Shanxi Bethune Hospital</h3>
+<p><strong>Clinical Nutrition Intern</strong> | Taiyuan, China</p>
+<p>July - August 2023 and July - August 2024</p>
+<ul>
+<li>Assisted with nutritional risk screening and malnutrition
+assessments using NRS-2002, MNA, GLIM criteria, and PG-SGA under
+supervision.</li>
+<li>Supported nutrition planning, bedside dietary education,
+weight-management assessments, and follow-up adjustments.</li>
+</ul>
+</div>
+</div>
+<div id="skills" class="section level2">
+<h2>Skills</h2>
+<ul>
+<li><strong>Data analysis:</strong> R, SAS, SQL, SPSS, and Excel.</li>
+<li><strong>Research methods:</strong> Questionnaire design, data
+management, retrospective cohort studies, and statistical
+reporting.</li>
+<li><strong>Laboratory techniques:</strong> PCR, qPCR, RT-PCR, Western
+blot, cell culture, immunohistochemistry, and immunofluorescence.</li>
+<li><strong>Languages:</strong> Mandarin Chinese (native) and English
+(proficient; TOEFL 107).</li>
+</ul>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
