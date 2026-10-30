@@ -1,0 +1,134 @@
+---
+title: "Instacart Shopping Patterns"
+author: "Xueying Jia"
+output:
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+    navbar:
+      - title: "Home"
+        href: index.html
+        align: right
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(plotly)
+
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE
+)
+
+data("instacart", package = "p8105.datasets")
+
+department_df =
+  instacart |>
+  count(department, name = "n_items") |>
+  slice_max(n_items, n = 10, with_ties = FALSE) |>
+  mutate(
+    department = fct_reorder(department, n_items)
+  )
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Top 10 departments by product entries
+
+```{r department_bar}
+plot_ly(
+  data = department_df,
+  x = ~n_items,
+  y = ~department,
+  type = "bar",
+  orientation = "h"
+) |>
+  layout(
+    xaxis = list(
+      title = "Number of product entries",
+      tickformat = ",d"
+    ),
+    yaxis = list(title = ""),
+    margin = list(l = 140)
+  )
+```
+
+> Source: [Instacart data](https://p8105.com/dataset_instacart.html), loaded from p8105.datasets. Each row is one product in an order. Produce has the most product entries.
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Orders by hour of day
+
+```{r hourly_line}
+order_df =
+  instacart |>
+  distinct(order_id, order_dow, order_hour_of_day)
+
+hourly_df =
+  order_df |>
+  count(order_hour_of_day, name = "n_orders") |>
+  arrange(order_hour_of_day)
+
+plot_ly(
+  data = hourly_df,
+  x = ~order_hour_of_day,
+  y = ~n_orders,
+  type = "scatter",
+  mode = "lines+markers"
+) |>
+  layout(
+    xaxis = list(
+      title = "Hour of day",
+      tickvals = c(0, 6, 12, 18, 23)
+    ),
+    yaxis = list(
+      title = "Number of orders",
+      tickformat = ",d",
+      rangemode = "tozero"
+    )
+  )
+```
+
+> Each order is counted once. This plot uses all orders in the dataset. Orders are more common during the day.
+
+### Order size by day (5,000 sampled orders)
+
+```{r order_size_box}
+order_size_df =
+  instacart |>
+  count(order_id, order_dow, name = "n_products")
+
+set.seed(123)
+
+order_sample_df =
+  order_size_df |>
+  slice_sample(n = 5000) |>
+  mutate(
+    order_dow = factor(order_dow, levels = 0:6)
+  )
+
+plot_ly(
+  data = order_sample_df,
+  x = ~order_dow,
+  y = ~n_products,
+  color = ~order_dow,
+  colors = "viridis",
+  type = "box",
+  boxpoints = "outliers",
+  marker = list(size = 3),
+  showlegend = FALSE
+) |>
+  layout(
+    xaxis = list(
+      title = "Day of week (coded 0–6)"
+    ),
+    yaxis = list(
+      title = "Products per order",
+      rangemode = "tozero"
+    )
+  )
+```
+
+> Boxplots use 5,000 randomly sampled orders (seed 123). Day codes are kept as recorded. These results may not represent all Instacart users.
